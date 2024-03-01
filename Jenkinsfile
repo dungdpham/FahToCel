@@ -2,13 +2,13 @@ pipeline {
   agent any
   environment {
     PATH = "${env.PATH};C:\\Windows\\System32" // Update the PATH to include the directory of cmd.exe
-    GIT_CREDENTIALS = credentials('GithubSecret')
+    GIT_CREDENTIALS = credentials('GithubPass')
   }
   
   stages {
     stage('Checkout') {
       steps {
-        git branch: 'main', credentialsId: 'GithubSecret', url: 'https://github.com/dungdpham/FarToCel.git'
+        git branch: 'main', credentialsId: 'GithubPass', url: 'https://github.com/dungdpham/FarToCel.git'
       }
     }
     stage('Build') {
