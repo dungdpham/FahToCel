@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('Checkout') {
       steps {
-        git branch: 'main', credentialsId: 'GithubPass', url: 'https://github.com/dungdpham/FarToCel.git'
+        git branch: 'main', credentialsId: 'GithubPass', url: 'https://github.com/dungdpham/FahToCel.git'
       }
     }
     stage('Build') {
