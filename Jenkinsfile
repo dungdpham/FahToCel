@@ -5,7 +5,7 @@ pipeline {
     GIT_CREDENTIALS = credentials('GithubPass')
   }
 
-  tools {git 'Git'}
+  tools {git 'Default'}
   
   stages {
     stage('Checkout') {
