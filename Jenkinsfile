@@ -4,10 +4,6 @@ pipeline {
     PATH = "${env.PATH};C:\\Windows\\System32" // Update the PATH to include the directory of cmd.exe
     GIT_CREDENTIALS = credentials('GithubPass')
   }
-
-  tools {
-    git 'Default'
-  }
   
   stages {
     stage('Checkout') {
